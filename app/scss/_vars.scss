@@ -1,0 +1,25 @@
+$default-color: #383334;
+$bg-color: #F3F6FA;
+$accent-color: #FC2763;
+$light-text: #8D97A4;
+
+
+%gilroy-300 {
+	font-family: 'Gilroy-light', sans-serif;
+	font-weight: 300;
+}
+
+%gilroy-400 {
+	font-family: 'Gilroy-Regular', sans-serif;
+	font-weight: 400;
+}
+
+%gilroy-500 {
+	font-family: 'Gilroy-Medium', sans-serif;
+	font-weight: 500;
+}
+
+%gilroy-700 {
+	font-family: 'Gilroy-Bold', sans-serif;
+	font-weight: 700;
+}
