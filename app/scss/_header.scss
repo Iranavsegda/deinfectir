@@ -1,10 +1,8 @@
 .header {
-	background-repeat: no-repeat;
-	padding-top: 65px;
+	padding-top: 100px;
 
-	&__content {
-		max-width: 780px;
-		margin-left: auto;
+	&__inner {
+		display: flex;
 	}
 
 	&__list {
@@ -164,17 +162,16 @@
 	@extend %gilroy-500;
 	font-size: 15px;
 	border: 3px solid transparent;
-	transition: all 0.8s;
-
-	
+	transition: all 0.5s;
 }
 
 .popup__link {
 	&:hover {
 		border: none;
-		background-color: $bg-color;
-		color: $accent-color;
 		border: 3px solid $accent-color;
+		-webkit-box-shadow: 3px 3px 21px -3px #FF5086;
+		box-shadow: 3px 3px 21px -3px #FF5086;
+		transform: scale(1.2) scaleZ(2.4) rotateX(25deg) rotateY(0deg);
 	}
 }
 
@@ -188,10 +185,12 @@
 .phone {
 	font-size: 18px;
 	color: $default-color;
-
 	@extend %gilroy-300;
+	transition: transform 0.5s;
+	&:hover {
+		transform: scale(1.5) scaleZ(1.5);
+	}
 }
-
 
 .popup {
 	position: fixed;
@@ -258,8 +257,7 @@
 	outline: none;
 }
 
-.popup__input::placeholder
-{
+.popup__input::placeholder {
 	font-size: 15px;
 	color: #fff;
 }
