@@ -1,0 +1,29 @@
+.footer {
+	background-color: #DAE2ED;
+	padding: 60px 0 25px;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__bottom {
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+		color: $light-text;
+	}
+}
+
+.adress {
+	display: flex;
+	color: $light-text;
+}
+
+.contact {
+	display: inline-block;
+	font-style: normal;
+	color: $light-text;
+	&:not(:last-child) {
+		padding-right: 30px;
+	}
+}
