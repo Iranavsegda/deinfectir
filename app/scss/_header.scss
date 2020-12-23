@@ -1,4 +1,5 @@
 .header {
+	height: 100vh;
 	padding-top: 100px;
 
 	&__inner {
@@ -152,7 +153,6 @@
 	margin-bottom: 50px;
 }
 
-
 .btn {
 	padding: 25px 30px;
 	border: none;
@@ -187,6 +187,7 @@
 	color: $default-color;
 	@extend %gilroy-300;
 	transition: transform 0.5s;
+
 	&:hover {
 		transform: scale(1.5) scaleZ(1.5);
 	}
@@ -218,12 +219,13 @@
 	max-width: 680px;
 	padding: 60px 100px;
 	position: relative;
+	border-radius: 3px;
 }
 
 .popup__close {
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 25px;
+	right: 25px;
 }
 
 .popup__title {
@@ -242,23 +244,25 @@
 .popup__input {
 	border: none;
 	width: 100%;
+	padding: 10px;
 	border-bottom: 1px solid #dadada;
 	font-size: 15px;
 	outline: transparent;
 	background-color: #DF1F55;
+	color: #fff;
 }
 
 .popup__input+.popup__input {
 	margin-top: 25px;
 }
 
-
 .popup__input:focus {
 	outline: none;
 }
 
 .popup__input::placeholder {
-	font-size: 15px;
+	
+	font-size: 20px;
 	color: #fff;
 }
 
@@ -268,6 +272,8 @@
 	width: 300px;
 	text-transform: uppercase;
 	margin-top: 40px;
+	@extend %gilroy-700;
+	font-size: 18px;
 }
 
 .popup:target {
