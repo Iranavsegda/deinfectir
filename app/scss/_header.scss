@@ -1,11 +1,14 @@
 .header {
-	height: 100vh;
 	padding-top: 100px;
-
-	&__inner {
-		display: flex;
+	&__content {
+		padding-left: 400px;
+		position: relative;
 	}
-
+	&__photo {
+		position: absolute;
+		left: -10%;
+		top: 0;
+	}
 	&__list {
 		counter-reset: number 0;
 		margin-bottom: 40px;
@@ -46,7 +49,7 @@
 
 	&__table-text {
 		max-width: 200px;
-		padding-right: 55px;
+		padding-right: 30px;
 		border-right: 1px solid #D0D6DE;
 	}
 
@@ -84,7 +87,7 @@
 	&__new-price {
 		font-size: 24px;
 		color: $accent-color;
-		@extend %gilroy-700;
+		@extend %gilroy-500;
 		display: inline-block;
 		width: 90px;
 	}
@@ -94,7 +97,6 @@
 	@extend %gilroy-300;
 	font-size: 15px;
 	color: $default-color;
-
 }
 
 .header__old-price {
@@ -103,11 +105,11 @@
 
 
 	&:before {
-		border-bottom: 3px solid $accent-color;
+		border-bottom: 2px solid $accent-color;
 		position: absolute;
 		content: "";
-		width: 100%;
-		height: 50%;
+		width: 109%;
+		height: 64%;
 		transform: rotate(7deg);
 	}
 }
@@ -144,6 +146,7 @@
 	color: $accent-color;
 	@extend %gilroy-700;
 	font-size: 60px;
+	line-height: 1.1;
 }
 
 .subtitle {

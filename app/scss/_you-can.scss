@@ -1,5 +1,5 @@
 .you-can {
-	padding-top: 100px;
+	padding-top: 200px;
 	padding-bottom: 100px;
 
 	&__title {
@@ -58,9 +58,13 @@
 	}
 
 	&__item-title {
+		display: block;
 		margin-bottom: 15px;
 		font-size: 28px;
 		@extend %gilroy-500;
 		color: $accent-color;
+	}
+	&__text {
+		line-height: 1.5;
 	}
 }
